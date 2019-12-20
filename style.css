@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  /* Revoir */
+.navbar {
+    font-size: 10px;
+    padding-bottom: 10px;
+    border: none;
+  }
+
+  
+  .nav-links,
+  .logo {
+    text-decoration: none; /* enlever les traits */
+    color:#515f67;
+  }
+  
+  
+  .logo {
+    display: inline-block;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 200px;
+  }
+
+  
+  @media screen and (min-width: 768px) {
+        .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+        }
+    
+        .main-nav {
+        display: flex; /* Aligne les li au niveau du navBar */
+        margin-right: 200px; /* marge à droite */
+        }
+
+        .nav-links {
+        margin-left: 40px; /* MArge à gauche entre les li au niveau du navBar */
+        font-size: 14px;
+        font-weight: bold;
+        }
+    
+        .logo {
+        margin-top: 0;
+        }
+    
+        .logo:hover,
+        .nav-links:hover {
+            /* Au survol des éléments du 2em NavBar*/
+        color: #6fa2cc;
+        border: 1px solid #6fa2cc;
+        padding: 10px;
+        }
+  }
+
+
+  ul{
+    list-style: none; /* Supprime les boutons au niveau des listes à puce , c'est l'exemple du tableau*/
+    /* Revoir */
+	font-size: 15px;
+	color: #9095aa;
+    padding: 0px; 
+	margin: 0px;
+}
+
+
+.allCards{
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+.imgCard {
+    display: inline-block;
+    position: relative;
+    margin-top: 50px;
+    height: 250px;
+    width: 282px;
+    margin-left: 10px;
+}
+
+.imgDetails {
+    height: 250px;
+    width: 282px;
+    opacity: .9; /* Rend les images opaques */
+  }
+
+.imgSignHover{
+    position: absolute;
+    opacity: 0; /* pour rendre le div au dessus des images(card) opaque. Ce qui par la même occasion cache le plus */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #353f46;
+}
+
+.imgSigne{
+    color: white;
+    font-size: 72px;
+    font-weight: 300px;
+    position: absolute;
+    top: 25%;
+    left: 40%;
+}
+
+/* AU survole des images (card) */
+.imgSignHover:hover{
+    opacity: 0.8;
+    cursor: zoom-in;
+}
+
+  
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
